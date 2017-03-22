@@ -1,4 +1,6 @@
-namespace \ {
+<?php
+namespace {
+	
   class SyncMutex {
     /**
     * Construit un nouvel objet SyncMutex
@@ -14,14 +16,14 @@ namespace \ {
     * @param int $wait : Le nombre de millisecondes à attendre pour l'obtention du verrou exclusif. Une valeur -1 signifie que l'on attend indéfiniement.
     * @return bool Un booléen ayant comme valeur TRUE si le verrou est obtenu, FALSE sinon.
     */
-    public function lock ( int $wait ):bool {}
+    public function lock ( int $wait ) {}
     
     /**
     * Décrémente le compteur interne d'un objet SyncMutex. Lorsque le compteur interne atteint zéro, le verrou actuel de l'objet est libéré.
     * @param bool $all : Spécifie si l'on doit ou non définir le compteur interne à zéro et donc, libérer le verrou.
     * @return bool Un booléen valant TRUE si l'opération de déverrouillage est un succès, FALSE sinon.
     */
-    public function unlock ( bool $all = false ) :bool {}
+    public function unlock ( bool $all = false ) {}
   }
 
 }
